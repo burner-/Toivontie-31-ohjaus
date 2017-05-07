@@ -47,6 +47,8 @@ unsigned int localPort = UDP_PORT; // local port to listen on
 #include "lights.h";
 #include "motion.h";
 
+//Test
+
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xAF, 0xFB, 0xE2 };
 IPAddress ip(10, 220, 2, 23);
 IPAddress ip_gw(10, 220, 0, 1);
