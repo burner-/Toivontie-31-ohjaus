@@ -193,7 +193,10 @@ void set_settings()
  // Get new values from client   
   getArgumentValue("lightOn", &settings.lightOn);
   getArgumentValue("DefaultAutoOff", &settings.DefaultAutoOff);
-  
+  bool save = false;
+  getArgumentValue("save", &save);
+  if(save)
+    Serial.println("Saving settings");
   
 
   for ( uint8_t i = 0; i < server.args(); i++ ) {

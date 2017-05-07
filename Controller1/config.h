@@ -3,7 +3,7 @@
 typedef struct
 {
   char BOFmark = 'A';
-  bool lightOn = true;
+  bool lightOn = false;
   unsigned long DefaultAutoOff = 28800; // 8h in seconds
   char EOFmark = 'E';
 }  settingsType;
