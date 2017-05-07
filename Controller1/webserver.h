@@ -194,6 +194,7 @@ void set_settings()
   getArgumentValue("lightOn", &settings.lightOn);
   getArgumentValue("DefaultAutoOff", &settings.DefaultAutoOff);
   getArgumentValue("lightDim", &settings.lightDim);
+  
   bool save = false;
   getArgumentValue("save", &save);
   if(save)

@@ -6,7 +6,7 @@ typedef struct
   bool lightOn = false;
   unsigned long DefaultAutoOff = 28800; // 8h in seconds
   char EOFmark = 'E';
-  byte lightDim = 255;
+  int lightDim = 255;
 }  settingsType;
 
 settingsType settings;
