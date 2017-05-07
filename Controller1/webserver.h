@@ -192,6 +192,7 @@ void set_settings()
 {
  // Get new values from client   
   getArgumentValue("lightOn", &settings.lightOn);
+  getArgumentValue("motionOn", &settings.motionSensorOn);
   getArgumentValue("DefaultAutoOff", &settings.DefaultAutoOff);
   getArgumentValue("lightDim", &settings.lightDim);
   
@@ -215,6 +216,7 @@ void set_settings()
 
   String values = "";
   jsonAddValue(values, F("lightOn"), settings.lightOn,true);
+  jsonAddValue(values, F("motionOn"), settings.motionSensorOn,true);
   jsonAddValue(values, F("lightDim"), settings.lightDim,true);
   jsonAddValue(values, F("DefaultAutoOff"), settings.DefaultAutoOff,false);
   

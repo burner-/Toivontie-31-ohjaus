@@ -31,7 +31,8 @@ void readMotionSensors(){
       Serial.print(i);
       Serial.print(" = ");
       Serial.println( newstate );
-      doMotionLogic();
+      if(settings.motionSensorOn)
+        doMotionLogic();
     }
   }
 }
