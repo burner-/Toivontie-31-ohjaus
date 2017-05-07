@@ -4,6 +4,7 @@ typedef struct
 {
   char BOFmark = 'A';
   bool lightOn = false;
+  bool motionSensorOn = true;
   unsigned long DefaultAutoOff = 28800; // 8h in seconds
   char EOFmark = 'E';
   int lightDim = 255;
