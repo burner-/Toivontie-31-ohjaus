@@ -193,6 +193,7 @@ void set_settings()
  // Get new values from client   
   getArgumentValue("lightOn", &settings.lightOn);
   getArgumentValue("DefaultAutoOff", &settings.DefaultAutoOff);
+  getArgumentValue("lightDim", &settings.lightDim);
   bool save = false;
   getArgumentValue("save", &save);
   if(save)
@@ -213,6 +214,7 @@ void set_settings()
 
   String values = "";
   jsonAddValue(values, F("lightOn"), settings.lightOn,true);
+  jsonAddValue(values, F("lightDim"), settings.lightDim,true);
   jsonAddValue(values, F("DefaultAutoOff"), settings.DefaultAutoOff,false);
   
   sentSize += sendWebContent(values);
